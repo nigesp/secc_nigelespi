@@ -1,0 +1,17 @@
+********************
+*** DEPLOY NOTES ***
+********************
+
+# MySql driver - please ensure that the MySql driver jar is in the lib folder of the container you will be using.
+
+# Database - please ensure that you have a database setup as per the details in the dataSource bean:
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/secretescapes"/>
+    <property name="username" value="root"/>
+    <property name="password" value="meandyou"/>
+
+# Run the SQL commands in the file called: initial_data.sql, located in the same folder as this file.
+
+# This is a maven project so create a WAR by executing the clean and package life cycle events.
+
+# Deploy WAR to Tomcat.

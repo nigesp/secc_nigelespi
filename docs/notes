@@ -1,0 +1,7 @@
+*************
+*** NOTES ***
+*************
+
+# Due to time constraints (setting up the spring app takes a lot longer than grails) I have only implemented unit test.
+
+# I have not implemented any db, domain or controller layer tests. With more time I would have!

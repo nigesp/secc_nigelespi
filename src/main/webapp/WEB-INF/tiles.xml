@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="common" template="/WEB-INF/view/templates/base.jsp" />
+
+    <definition name="home" extends="common">
+        <put-attribute name="body" value="/WEB-INF/view/home.jsp"/>
+    </definition>
+
+    <definition name="account/list" extends="common">
+        <put-attribute name="body" value="/WEB-INF/view/account/list.jsp"/>
+    </definition>
+
+    <definition name="account/view" extends="common">
+        <put-attribute name="body" value="/WEB-INF/view/account/view.jsp"/>
+    </definition>
+
+    <definition name="account/pay" extends="common">
+        <put-attribute name="body" value="/WEB-INF/view/account/pay.jsp"/>
+    </definition>
+
+    <definition name="account/pay/success" extends="common">
+        <put-attribute name="body" value="/WEB-INF/view/account/pay_success.jsp"/>
+    </definition>
+
+</tiles-definitions>
